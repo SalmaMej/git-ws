@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM DATA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>bienvenue a lyceee mahmoud el messadi nabeul </h1>
+        <h2>completer vos information </h2>
+        <form role="form" onsubmit="signUp(event);">
+            <div class="form-group">
+                <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+            </div>
+           
+        <label>Choose votre niveau scolaire:</label>
+        <select name='service' class="service">
+            <option>1ere annee.</option>
+            <option>2eme annee.</option>
+            <option>3eme annee.</option>
+            <option> baccalaureat</option>
+        </select> <br> <br>
+            <div class="form-group">
+                <input type="text" name="date" id="date" placeholder="date de naissance" required>
+            </div>
+             <div class="form-group">
+                <input type="text" name="nom de pere" id="nomde pere" placeholder="nom de pere" required>
+            </div>
+              <div class="form-group">
+                <input type="text" name="cin" id="cin" placeholder="cin de pere" required>
+            </div>
+             <div class="form-group">
+                <input type="text" name="numr" id="numr" placeholder="saisir vorte numr" required>
+            </div>
+        
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="pwd" id="pwd" placeholder="Password" required>
+                
+            </div>
+            <div class="form-group">
+                <button type="submit">Inscrire</button>
+                <button class="btn btn-outline-danger"><a href="./connexion.html">Retour</a></button>
+            </div>
+        </form>
+
+        <h2>verificatin vous information</h2>
+        <div id="output">
+            <!-- DISPLAY USERS DATA -->
+        </div>
+    </div>
+
+    <script src="script.js">    </script>
+    
+</body>
+</html>
